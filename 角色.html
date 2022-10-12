@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  </head>
+
+ <style>
+.media{
+  bottom:5%;
+}
+.grid-container{
+  display: grid;grid-template-rows: auto;
+}
+li:hover {
+  text-decoration:none;
+  background-color: azure;
+}
+li:active {
+  color: rgb(255, 0, 0);
+  opacity: 1;
+}
+a:hover {
+  text-decoration:none;
+}
+a:active {
+  text-decoration:none;
+}
+.grid-item1:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item1:active{color: rgb(255, 0, 119); opacity: 1;}
+.grid-item2:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item2:active{color: rgb(255, 0, 0); opacity: 1;}
+.grid-item3:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item3:active{color: rgb(255, 255, 255); opacity: 1;}
+.grid-item4:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item4:active{color: rgba(255, 217, 0, 0.501); opacity: 1;}
+.grid-item5:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item5:active{color: rgb(0, 242, 255); opacity: 1;}
+.grid-item6:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item6:active{color: rgb(255, 217, 0); opacity: 1;}
+.grid-item7:hover{background-color: rgb(0, 0, 0);  opacity: 1;}
+.grid-item7:active{color: rgb(103, 103, 103); opacity: 1;}
+.grid-item8:hover{background-color: rgb(0, 0, 0); opacity: 1;}
+.grid-item8:active{color: rgb(8, 174, 230); opacity: 1;}
+.grid-item9:hover{background-color: rgb(0, 0, 0);  opacity: 1;}
+.grid-item9:active{color: rgb(255, 0, 0); opacity: 1;}
+.grid-item9:hover{background-color: rgb(105, 104, 104);  opacity: 1;}
+ 
+.grid-item1{
+  background-image: url(../Touhoproject/character/博丽神社.jpg); opacity: 0.7; background-size: cover;
+  background-position-y:-80px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight:800; text-align:center;
+  color:aliceblue; padding-block: 6%; text-shadow: 3px 3px 2px black;} 
+
+.grid-item2{
+  background-image: url(../Touhoproject/character/红魔馆.jfif); opacity: 0.7; background-size: cover;
+  background-position-y:-160px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 6%; text-shadow: 3px 3px 2px black;}
+
+.grid-item3{
+  background-image: url(../Touhoproject/character/白玉楼.jpg); background-size: cover; opacity: 0.7;
+  background-position-y:-400px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 6%; text-shadow: 3px 3px 2px black;}
+
+.grid-item4{
+  background-image: url(../Touhoproject/character/八云邸.jpg); background-size: cover; opacity: 0.7;
+  background-position-y:-280px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 6%; text-shadow: 3px 3px 2px black;}
+
+.grid-item5{
+  background-image: url(../Touhoproject/character/妖怪之山.jpg); background-size: cover; opacity: 0.7;
+  background-position-y:-100px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 8%; text-shadow: 3px 3px 2px black;}
+
+.grid-item6{
+  background-image: url(../Touhoproject/character/守矢神社.jpg); background-size: cover; opacity: 0.7;
+  background-position-y:-260px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 8%; text-shadow: 3px 3px 2px black;}
+
+.grid-item7{
+  background-image: url(../Touhoproject/character/迷途竹林.png); background-size: cover; opacity: 0.7;
+  background-position-y:-250px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 8%; text-shadow: 3px 3px 2px black;}
+
+.grid-item8{
+  background-image: url(../Touhoproject/character/迷途竹林.png); background-size: cover; opacity: 0.7;
+  background-position-y:-200px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
+  color:aliceblue; padding-block: 8%; text-shadow: 3px 3px 2px black;}
+
+.grid-item9{
+  background-image: url(../Touhoproject/character/); background-size: cover; opacity: 0.7; 
+  background-position-y:-90px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center; 
+  color:aliceblue; padding-block: 8%;text-shadow: 3px 3px 2px black;}
+
+      .nav-link{
+        color:rgb(241, 234, 234);
+      }
+      .topnav {
+  display: none;
+}
+      @media screen and (min-width: 630px) and (max-width: 1000px) {
+       
+      .topnav {
+  display: none;
+}
+      }
+
+  @media screen and (min-width: 0px) and (max-width: 630px) {
+        .grid-item1{
+  background-position-y:-10px;}
+        .grid-item2{
+  background-position-y:-95px;}
+
+  .grid-item8{ background-position-y:-100px;}
+
+  .audio
+  {display:none;}
+
+      .topnav {
+  position:fixed;
+  right:0%;
+  z-index: 10;
+  display:block;
+  max-width: 300px;
+}
+
+.topnav a {
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  display:block;
+}
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a.icon {
+  display: block;
+  right: 0;
+  margin-top: -70px;
+}
+
+.topnav a:hover {background-color: rgb(255, 255, 255);color: black;}
+.topnav a:active {background-color: rgb(0, 128, 255);color: black;}
+.icon{text-align: center;}
+.navbar-nav{display:none;}
+.copyright{display:flex;}
+}
+
+
+    </style>
+
+  <body>
+    <!-- A horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-danger justify-content-between">
+      
+      <div class="navbar-header">
+        <div class="navbar-brand" href="">
+          <img
+            alt="Brand"
+            style="max-width: 60px; margin-top: 0px"
+            src="icon.jpg"
+          />
+          <font size="5" color="white"><strong>Edward Chan的實驗室</strong></font>
+        </div>
+      </div>
+
+       <!-- BGM -->
+      <audio controls>
+        <source src="華鳥風月.mp3" type="audio/ogg" hidden="false" class="audio"> 
+      </audio>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="角色.html">角色</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">社區</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">商城</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">關於我們</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Nav Item -->  
+<div class="topnav">
+  <a href="javascript:void(0);" class="icon bg-danger" onclick="myFunction1()">
+    <i class="fa fa-bars fa-lg"></i>
+  </a>
+
+  <div id="myLinks" class="bg-danger">
+    
+    <a href="index.html">首頁</a>
+    <a href="角色.html"> 角色</a>
+    <a href="">社區</a>
+    <a href="">商城</a>
+    <a href=""> 關於</a>
+  </div>
+</div>
+      <script>
+        function myFunction1() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+
+    <div class="grid-container">
+      <a href="博麗.html">
+        <div class="grid-item1">博麗神社</div></a>
+      <a href="红魔馆.html">
+        <div class="grid-item2">紅魔館</div></a>
+      <a href="白玉樓.html">
+      <div class="grid-item3">白玉樓</div></a> 
+      <a href="八雲邸.html">
+      <div class="grid-item4">八雲邸</div></a>
+      <a href="妖怪之山.html">
+      <div class="grid-item5">妖怪之山</div></a>
+      <a href="守矢神社.html">
+      <div class="grid-item6">守矢神社</div></a>  
+      <a href="">
+      <div class="grid-item7">迷途竹林（永遠亭、藤原邸）</div></a>
+      <a href="">
+      <div class="grid-item8">命蓮寺/div></a>
+      <a href="">
+      <div class="grid-item9">少女更新中...</div></a>
+
+    <br>
+    
+    <div class="grid-item10" style="text-align:center;bottom: 0%;" >
+
+       <!--Facebook-->
+        <a style="color: rgb(9, 102, 161)" href="https://zh-hk.facebook.com/" role="button"
+          ><i class="fa fa-facebook fa-lg align-bottom" style="width:20px;"></i> 
+        </a>
+
+      <!--Instagram-->
+
+        <a style="color: #ac2bac" href="https://www.instagram.com/" role="button"
+          ><i class="fa fa-instagram fa-lg align-bottom" style="width:10px;margin-left:15px;"></i> 
+        </a>
+
+      <!--Weixin-->
+
+        <a style="color: #02ff2c" href="https://pc.weixin.qq.com/" role="button"
+          ><i class="fa fa-weixin fa-lg align-bottom" style="width:40px;margin-left:30px;"></i> 
+        </a>
+
+      <!--Weibo-->
+
+        <a style="color: #ffb302" href="https://weibo.com/hk?ssl_rnd=1662360019.0022" role="button">
+          <i class="fa fa-weibo fa-lg align-bottom" style="width:40px;margin-left:5px;"></i> 
+        </a>
+      
+        <br>
+        <br>
+
+      <b>@2022 Copyright: Presented by Edward Chan</b>
+    </div>
+  </div>
+
+  </body>
+
+</html>
