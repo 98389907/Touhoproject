@@ -61,7 +61,7 @@ a:active {
  .grid-item1{
   background-image: url(../Touhoproject/character/橙.png); background-size: cover; background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.8); font-size: 32px; font-weight:800; text-align:center;
-  color:aliceblue; padding-block: 100%; block-size: 100%; text-shadow: 3px 3px 2px black; opacity: 0.8;} 
+  color:aliceblue; padding-bottom: 200%; block-size: 100%; text-shadow: 3px 3px 2px black; opacity: 0.8;} 
 
  .grid-item2{
   background-image: url(../Touhoproject/character/秋静叶.png); background-size:cover; background-position: center; background-position-x:45%;
@@ -155,17 +155,33 @@ a:active {
   display: none;
 }
       @media screen and (min-width: 630px) and (max-width: 1000px) {
-       
+        .grid-container-fluid{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.grid-item18{
+  padding-block: 100%; width:300% }
+
       .topnav {
   display: none;
 }
       }
 
   @media screen and (min-width: 0px) and (max-width: 630px) {
-
-  .audio
-  {display:none;}
-
+    .grid-container-fluid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid-item3{
+  padding-bottom: 200%; }
+  .grid-item7{
+  padding-bottom: 200%; }
+  .grid-item9{
+  padding-bottom: 200%; }
+  .grid-item13{
+  padding-bottom: 200%; }
+  .grid-item15{
+  padding-bottom: 200%; }
       .topnav {
   position:fixed;
   right:0%;
