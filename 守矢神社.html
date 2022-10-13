@@ -136,10 +136,20 @@ a:active {
       }
 
   @media screen and (min-width: 0px) and (max-width: 630px) {
-
-  .audio
-  {display:none;}
-
+    .grid-container-fluid{
+  display:grid;
+  grid-template-columns: 100%;
+}
+.grid-item1{padding-bottom: 0%;}   .grid-item2{padding-bottom: 0%;}   .grid-item3{padding-bottom: 0%;}
+.grid-item1-sub{
+ display: none;
+}
+.grid-item2-sub{
+  display: none;
+}
+.grid-item3-sub{
+  display: none;
+}
       .topnav {
   position:fixed;  right:0%;
   z-index: 10;
@@ -167,6 +177,7 @@ a:active {
 .topnav a:active {background-color: rgb(0, 128, 255);color: black;}
 .icon{text-align: center;}
 .navbar-nav{display:none;}
+.col-12{top:10px;}
 .copyright{display:flex;}
 }
 
@@ -263,6 +274,7 @@ a:active {
           </div>
         
   </div>
+
   
   <div class="col-12" style="text-align:center;bottom:10px;" >
 
