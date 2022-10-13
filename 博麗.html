@@ -43,12 +43,12 @@ a:active {
 .grid-item1{
   background-image: url(../Touhoproject/character/博丽神社2.png); background-size:200%; background-position-y: -10px; 
   border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight:800; text-align:center; 
-  color:aliceblue; padding-block: 20%; height:90%; text-shadow: 3px 3px 2px black;} 
+  color:aliceblue; padding-block: 15%;  padding-top: 20%; text-shadow: 3px 3px 2px black;} 
 
 .grid-item2{
   background-image: url(../Touhoproject/character/博丽神社2.png); transform: scaleX(-1); background-size:200%; 
   background-position-y: -10px; border: 1px solid rgba(0, 0, 0, 0.8); font-size: 40px; font-weight: 800; text-align:center;
-  color:aliceblue; padding-block: 19.5%;  height:90%; text-shadow: 3px 3px 2px black;}
+  color:aliceblue; padding-block: 14.5%;   padding-top: 20%;  text-shadow: 3px 3px 2px black;}
 
   .靈夢{
     max-width: 150%;
@@ -85,7 +85,22 @@ a:active {
       }
 
   @media screen and (min-width: 0px) and (max-width: 630px) {
-
+ .grid-container-fluid{
+  display: grid;
+  grid-template-columns: 100%;
+}
+  .靈夢{
+    max-width: 108%;
+    display:flex;
+    margin-left:-38px;
+  }
+  .魔理沙{
+    max-width: 75%;
+    display:flex;
+    margin-top:-22.5%;
+    margin-left:40px;
+    filter: brightness(0.8) 
+  }
   .audio
   {display:none;}
 
@@ -205,6 +220,8 @@ a:active {
           <img src="character/魔理沙.png" class="魔理沙">霧雨魔理沙</div>
         </div>      
   </div>
+
+  <br>
 
   <div class="col-12" style="text-align:center;bottom:10px;" >
 
